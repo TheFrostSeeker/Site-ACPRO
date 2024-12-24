@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>Accueil - ACPRO</title>
+    <link href="../CSS/style.css" rel="stylesheet" />
+    <link href="../CSS/index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="lien-icone"><img src="../images/logo.png" alt="Logo ACPRO" width="100px"/></a>
+            <a href="a-propos.html">Présentation</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main style="margin-top: 100px;">
+<!--    Introduction -->
+        <section class="accueil-introduction">
+            <div>
+                <h1>Artisan Création PRécision Occitan (ACPRO)</h1>
+                <p>
+                    Où <em>professionalisme</em> s’allie avec <em>passion</em>. Depuis plus de 5 ans maintenant,
+                    j’exerce mon métier avec la passion qui m’anime : créer des pièces uniques et sur mesure.
+                </p>
+                <a href="#contact" class="cta">UN PROJET ? ÉCRIVEZ-MOI</a>
+            </div>
+            <img src="../images/atelier.jpg" alt="Atelier" width="425px" />
+        </section>
+        
+<!--    Photos des derniers projets -->
+        <section class="accueil-photos">
+            <h2>Mes derniers projets</h2>
+            <div>
+                <img src="../images/portfolio/1.jpg" alt="image_1" />
+                <img src="../images/portfolio/2.jpg" alt="image_2" />
+                <img src="../images/portfolio/3.png" alt="image_3" />
+                <img src="../images/portfolio/4.png" alt="image_4" />
+            </div>
+        </section>
+        
+<!--    Section contact -->
+        <section id="contact" class="section-contact">
+            <h2>Parlons de votre projet</h2>
+            <form method="get" action="">
+                <div class="form-nom-email">
+                    <div class="form-column">
+                        <label for="nom"><strong>Nom</strong></label>
+                        <input type="text" name="nom" id="nom" class="input-text" placeholder="Nom Prénom" required />
+                    </div>
+                    <div class="form-column">
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" name="email" id="email" class="input-text" placeholder="Adresse mail"required />
+                    </div>
+                    <div class="form-column">
+                        <label for="tel"><strong>Téléphone</strong></label>
+                        <input type="text" name="tel" id="tel" class="input-text" placeholder="Numéro de téléphone (facultatif)"/>
+                    </div>
+                </div>
+                <div class="form-nom-email">
+                    <div class="form-column">
+                        <label for="objet"><strong>Objet</strong></label>
+                        <input type="text" name="objet" id="objet" class="input-text" placeholder="Objet" required />
+                    </div>
+                </div>
+                <label for="message"><strong>Message</strong></label>
+                <textarea name="message" id="message" class="input-textarea" rows="10" placeholder="Votre message" required></textarea>
+                <input type="submit" value="ENVOYER" class="cta" />
+            </form>
+        </section>
+    </main>
+<!-- Footer -->
+    <footer>
+        <p> - Artisan Création PRécision Occitan (ACPRO) - © </p>
+    </footer>
+
+<!-- Fin -->
+</body>
+</html>
